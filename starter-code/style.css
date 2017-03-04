@@ -1,34 +1,92 @@
 /* GENERAL */
-body {
+body, html {
 	text-align: center;
+	height: 100%;
+	font-family: 'Lato';
+	font-size: 12px;
+	color: #444;
 }
 h1 {
 	color: rgb(2, 132, 130);
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 23px;
+	letter-spacing: 1px;
 }
 h2 {
-	color: #ffd700;
+	color: #e24e42;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+main {
+	position: relative;
+	top: 9%;
+	left: 12%;
 }
 /* NAVIGATION */
 nav {
-	background-color: #808080;
+	width: 100%;
+	height: 7%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	z-index: 1;
 }
 nav a {
-	background-color: #ffbf00;
-	color: white;
-	padding: 35px;
-	display: block;
-	float: left;
+	color: #eb6e80;
+	text-decoration: none;
+	padding: 5px 0;
+	margin-left: 15px;
+	display: inline-block;
+	position: relative;
+	top: 20%;
+	right: 2%;
+	float: right;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	border-bottom: 2px solid transparent;
+	transition: .7s;
+	-moz-transition: .7s;
+	-webkit-transition: .7s;
 }
 nav a:hover {
-	background-color: #ee5f3c;
+	color: rgb(2, 132, 130);
+	border-bottom: 2px solid #eb6e80;
+	transition: .7s;
+	-moz-transition: .7s;
+	-webkit-transition: .7s;
 }
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	content:" ";
-	clear: both;
-	height: 0;
-	font-size: 0;
+.tagline {
+	position: relative;
+	top: 28%;
+	left: 2%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #e24e42;
+}
+/* SIDEBAR */
+aside {
+	width: 25%;
+	height: 100%;
+	position: fixed;
+	top: 7%;
+	left: 0;
+	border-right: 1px solid #eee;
+	background: #fff;
+}
+.instructions {
+	width: 67%;
+	height: auto;
+	padding: 15px;
+	border: 1px solid #eee;
+	position: relative;
+	margin: 0 auto 20px auto;
+	text-align: justify;
 }
 /* BOARD + CARDS */
 .board {
@@ -39,16 +97,25 @@ nav a:hover {
 .card {
 	height: 200px;
 	width: 150px;
-	border: 1px solid #000;
-	background: rgb(255,255,0);
-	border-radius: 10px;
+	background: #fff;
+	background-image: url('back.png');
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px;
 	float: left;
 	margin: 8%;
 }
 /* FOOTER */
 footer {
-	background-color: #808080;
+	width: 70%;
+	position: relative;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #eee;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #888;
 }
-.name {
-	color: #ff0000;
+.accent {
+	color: #eb6e80;
 }
